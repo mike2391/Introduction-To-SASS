@@ -1,0 +1,9 @@
+$my-color: red;
+
+header {
+  background-color: lightblue;
+  h1 {
+    font-size: 3rem;
+    color: $my-color;
+  }
+}
