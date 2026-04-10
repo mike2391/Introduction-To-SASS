@@ -9,6 +9,34 @@
 </head>
 
 <body>
+    <style>
+        body>div {
+            display: flex;
+            gap: 10px;
+        }
+
+        body>div>div:nth-child(1) {
+            background-color: cyan;
+            padding: 5px 10px;
+
+            div {
+                img {
+                    height: 300px;
+                }
+            }
+        }
+
+        body>div>div:nth-child(2) {
+            background-color: pink;
+            padding: 5px 10px;
+
+            div {
+                img {
+                    height: 300px;
+                }
+            }
+        }
+    </style>
     <header>
         <h1>You just learned how to use SASS</h1>
     </header>
@@ -16,15 +44,15 @@
     <h2>What is SASS?</h2>
     <p>SASS is a preprocessor for CSS</p>
     <p>for example:</p>
-    <div style="display: flex; gap: 10px;">
-        <div style="background-color: cyan; padding: 5px 10px;">
+    <div>
+        <div>
             <div>
                 This is SASS
             </div>
             <img height="300px" src="sass.png" alt="">
         </div>
 
-        <div style="background-color: pink; padding: 5px 10px;">
+        <div>
             <div>
                 This is CSS
             </div>
