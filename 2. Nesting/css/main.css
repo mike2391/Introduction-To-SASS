@@ -1,0 +1,33 @@
+.main {
+  background-color: lightblue;
+}
+.main .main-heading {
+  font-size: 2em;
+}
+.main .main-paragraph {
+  font-size: 1.5em;
+}
+
+.main h1,
+.main p,
+footer h1,
+footer p {
+  letter-spacing: 1px;
+  color: blue;
+}
+
+.container .main {
+  text-decoration: underline;
+}
+.main .main-heading {
+  font-style: italic;
+}
+.main:hover {
+  background-color: lightgreen;
+}
+.main-paragraph {
+  font-weight: bold;
+}
+.main .main-paragraph {
+  border: 1px solid black;
+}/*# sourceMappingURL=main.css.map */

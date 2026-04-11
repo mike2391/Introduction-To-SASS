@@ -1,0 +1,46 @@
+.main {
+  background-color: lightblue;
+
+  .main-heading {
+    font-size: 2em;
+  }
+
+  .main-paragraph {
+    font-size: 1.5em;
+  }
+}
+
+.main,
+footer {
+  h1,
+  p {
+    letter-spacing: 1px;
+    color: blue;
+  }
+}
+
+.main {
+  // & like tells the SASS if "Container" is a parent of current class (main).
+  .container & {
+    text-decoration: underline;
+  }
+
+  .main-heading {
+    font-style: italic;
+  }
+
+  //  if "&" is not declared after the class, it will be refer to the current class.
+  &:hover {
+    background-color: lightgreen;
+  }
+
+  // You also can use "&" refer to the current class.
+  &-paragraph {
+    font-weight: bold;
+  }
+
+  // Add one more "&" to make it nested when SASS compiling to CSS
+  & &-paragraph {
+    border: 1px solid black;
+  }
+}
