@@ -1,0 +1,26 @@
+// Modules is a trick to make our SASS become more modular
+// So it'll make our code more maintainable
+@use "mixin";
+@use "modules/footer";
+@import "header";
+
+// You can use "@import" or "@use" to import another SASS file
+// But it's better to use "@use", because SASS will be remove @import
+// You also can use "@use" in local installation of SASS, but you can't use "@import"
+
+// More info about @import vs @use - https://sass-lang.com/documentation/at-rules/import/
+
+.container {
+  @include mixin.flex-box(row-reverse, space-around);
+  width: 600px;
+  height: 400px;
+  background-color: gray;
+
+  .box {
+    width: 60px;
+    height: 60px;
+    background-color: lightgreen;
+    text-align: center;
+    line-height: 60px;
+  }
+}
