@@ -1,0 +1,12 @@
+/* This is how to make a variable in CSS */
+:root {
+  --primary-color: #3fc8da;
+}
+
+body {
+  color: var(--primary-color);
+}
+/* We just made a variable and use it in CSS */
+
+/* Why we declare it in root? to make it global access variable */
+/* We also MUST declare a variable inside a scoope */

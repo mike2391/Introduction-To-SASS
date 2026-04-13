@@ -1,0 +1,72 @@
+// Let's make a variable in SASS
+$primary-color: #a7f5ff;
+$text-color: #a13030;
+
+body {
+  background-color: $primary-color;
+}
+
+h1 {
+  // SASS have unique properties in how they operate on their variable(s)
+  // eventho we already declare variable "text-color", we can call it as $text_color
+  color: $text_color;
+}
+
+// SASS also adopt variable scoope, let's take a look
+.header {
+  $main-color: yellow;
+
+  // if we declare a variable inside a scope, it will only be accessable inside that scope
+  p {
+    background-color: $main-color;
+  }
+}
+
+// We can't use "$main-color" outside the scope
+// Like This:
+// .container{
+// color: $main-color;
+// }
+// Look back to html file
+
+// BUT! we can force a variable to be accessable outside the scope
+// Add "!global" after the variable
+.header {
+  $second-color: green !global;
+}
+
+.container {
+  color: $second-color;
+}
+
+// We can also re-declare variable with same name with different scope
+$third-color: rgb(255, 155, 155);
+.container2 {
+  $third-color: rgb(145, 145, 250);
+  background-color: $third-color;
+
+  p {
+    color: $third-color;
+    background-color: white;
+  }
+}
+
+.header2 {
+  background-color: $third-color;
+}
+// See how weird it is
+// The 1st $third-color is global, while the 2nd $third-color is local
+// When container 2 is declared, it will override the global $third-color
+// BUT! it will only affect for any element inside container2
+// When we call $third-color inside header2, it will call the local $third-color (the OG one)
+
+// In SASS, we also learn about Map (more like assosiative array)
+$colors: (
+  "primary": #a7f5ff,
+  "secondary": #a13030,
+  "third": rgb(145, 145, 250),
+);
+
+.map {
+  background-color: map-get($colors, "primary");
+}

@@ -1,0 +1,31 @@
+body {
+  background-color: #a7f5ff;
+}
+
+h1 {
+  color: #a13030;
+}
+
+.header p {
+  background-color: yellow;
+}
+
+.container {
+  color: green;
+}
+
+.container2 {
+  background-color: rgb(145, 145, 250);
+}
+.container2 p {
+  color: rgb(145, 145, 250);
+  background-color: white;
+}
+
+.header2 {
+  background-color: rgb(255, 155, 155);
+}
+
+.map {
+  background-color: #a7f5ff;
+}/*# sourceMappingURL=main.css.map */
