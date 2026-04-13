@@ -1,0 +1,61 @@
+// Mixin -> bunch of style that can be reused in other style
+// Similar to function in programming language
+
+// Without Mixin
+// .header ul,
+// .footer ul {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+// }
+
+// .header ul li,
+// .footer ul li{
+//   display: inline-block;
+// }
+
+@mixin inline-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+  }
+}
+
+.header ul,
+.footer ul {
+  @include inline-list();
+  li {
+    background-color: black;
+    padding: 4 px;
+    a {
+      color: white;
+    }
+  }
+}
+
+// You can use parameter in Mixin
+// It's up to you, you want to give a default value or not
+@mixin flex-box($direction: row, $space:center){
+  display: flex;
+  justify-content: $space;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+// Default value just help your Mixin still work eventho you don't give a custom value to your Mixin
+.container {
+  @include flex-box(row-reverse, space-around);
+  width: 600px;
+  height: 400px;
+  background-color: gray;
+
+  .box {
+    width: 60px;
+    height: 60px;
+    background-color: lightgreen;
+    text-align: center;
+    line-height: 60px;
+  }
+}

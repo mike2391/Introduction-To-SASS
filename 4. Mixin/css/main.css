@@ -1,0 +1,36 @@
+.header ul,
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header ul li,
+.footer ul li {
+  display: inline-block;
+}
+.header ul li,
+.footer ul li {
+  background-color: black;
+  padding: 4 px;
+}
+.header ul li a,
+.footer ul li a {
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 600px;
+  height: 400px;
+  background-color: gray;
+}
+.container .box {
+  width: 60px;
+  height: 60px;
+  background-color: lightgreen;
+  text-align: center;
+  line-height: 60px;
+}/*# sourceMappingURL=main.css.map */
