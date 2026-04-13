@@ -1,0 +1,116 @@
+.square-profile {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.circle-profile {
+  width: 80px;
+  height: 80px;
+  border: 5px solid #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.nav {
+  background: #999;
+  color: #ddd;
+}
+
+.right {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1em;
+  border-left-color: black;
+}
+
+.gradient {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.gradient li:nth-child(1) {
+  background-color: rgb(50.7829268293, 133.6829268293, 210.5170731707);
+}
+.gradient li:nth-child(2) {
+  background-color: rgb(63.3463414634, 141.1463414634, 213.2536585366);
+}
+.gradient li:nth-child(3) {
+  background-color: rgb(75.9097560976, 148.6097560976, 215.9902439024);
+}
+.gradient li:nth-child(4) {
+  background-color: rgb(88.4731707317, 156.0731707317, 218.7268292683);
+}
+.gradient li:nth-child(5) {
+  background-color: rgb(101.0365853659, 163.5365853659, 221.4634146341);
+}
+.gradient li:nth-child(6) {
+  background-color: rgb(113.6, 171, 224.2);
+}
+.gradient li:nth-child(7) {
+  background-color: rgb(126.1634146341, 178.4634146341, 226.9365853659);
+}
+.gradient li:nth-child(8) {
+  background-color: rgb(138.7268292683, 185.9268292683, 229.6731707317);
+}
+.gradient li:nth-child(9) {
+  background-color: rgb(151.2902439024, 193.3902439024, 232.4097560976);
+}
+.gradient li:nth-child(10) {
+  background-color: rgb(163.8536585366, 200.8536585366, 235.1463414634);
+}
+
+.gradient2 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.gradient2 li:nth-child(1) {
+  background-color: rgb(27.6784810127, 224.6215189873, 76.6481012658);
+}
+.gradient2 li:nth-child(2) {
+  background-color: rgb(39.1924050633, 228.4075949367, 86.2405063291);
+}
+.gradient2 li:nth-child(3) {
+  background-color: rgb(52.8139240506, 230.0860759494, 96.8924050633);
+}
+.gradient2 li:nth-child(4) {
+  background-color: rgb(66.435443038, 231.764556962, 107.5443037975);
+}
+.gradient2 li:nth-child(5) {
+  background-color: rgb(80.0569620253, 233.4430379747, 118.1962025316);
+}
+.gradient2 li:nth-child(6) {
+  background-color: rgb(93.6784810127, 235.1215189873, 128.8481012658);
+}
+.gradient2 li:nth-child(7) {
+  background-color: rgb(107.3, 236.8, 139.5);
+}
+.gradient2 li:nth-child(8) {
+  background-color: rgb(120.9215189873, 238.4784810127, 150.1518987342);
+}
+.gradient2 li:nth-child(9) {
+  background-color: rgb(134.5430379747, 240.1569620253, 160.8037974684);
+}
+.gradient2 li:nth-child(10) {
+  background-color: rgb(148.164556962, 241.835443038, 171.4556962025);
+}
+
+.socials {
+  font-size: 1em;
+  font-family: arial;
+  font-weight: semibold;
+}
+.socials .yt {
+  color: red;
+}
+.socials .fb {
+  color: blue;
+}
+.socials .tw {
+  color: purple;
+}/*# sourceMappingURL=main.css.map */
