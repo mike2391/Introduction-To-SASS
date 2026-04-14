@@ -1,0 +1,46 @@
+// built-in function: color
+// adjust-color
+
+/*color.adjust($color,
+  $red: null, $green: null, $blue: null,
+  $hue: null, $saturation: null, $lightness: null,
+  $whiteness: null, $blackness: null,
+  $x: null, $y: null, $z: null,
+  $chroma: null,
+  $alpha: null,
+  $space: null)
+  
+  *You don't need to use all of those parameters LMAO
+*/
+
+$primary-color: salmon;
+h1 {
+  // If you use Adjust-Color, basically you change the color by change the (R-G-B) ratio + the color you has been declared
+  color: adjust-color($color: $primary-color, $red: 100, $green: 2, $blue: 255);
+
+  // If you use Adjust-Hue, you change the color by change the angle of the color in color-wheel
+  // you can use "https://color.adobe.com/create/color-wheel" to see the color-wheel
+  background-color: adjust-hue($color: $primary-color, $degrees: 180deg);
+
+  // side info: hue 180 deg is same as built-in function: complement
+  // background-color: complement($color: $primary-color);
+  // try it, it will be same :D
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+
+$second-color: cyan;
+h2 {
+  color: darken($color: $second-color, $amount: 20%);
+  background-color: desaturate($color: $second-color, $amount: 40%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+
+// SASS have so many built-in functions
+// https://sass-lang.com/documentation/modules/ -> you can see all of them
